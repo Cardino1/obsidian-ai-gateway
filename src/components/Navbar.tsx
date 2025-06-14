@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Code, Menu, X } from "lucide-react";
@@ -12,7 +11,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Code className="h-8 w-8 text-white mr-2" />
-            <span className="text-xl font-bold tracking-tighter gradient-text">NexusAI</span>
+            <span className="text-xl font-bold tracking-tighter gradient-text">Analytics One</span>
           </div>
           
           <nav className="hidden md:flex space-x-10">

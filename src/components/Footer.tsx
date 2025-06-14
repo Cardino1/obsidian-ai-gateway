@@ -1,4 +1,3 @@
-
 import { Separator } from "@/components/ui/separator";
 import { Code } from "lucide-react";
 
@@ -10,7 +9,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <Code className="h-6 w-6 text-white mr-2" />
-              <span className="text-lg font-bold tracking-tighter gradient-text">NexusAI</span>
+              <span className="text-lg font-bold tracking-tighter gradient-text">Analytics One</span>
             </div>
             <p className="text-white/60 text-sm mb-4">
               Enterprise AI architecture solutions that transform businesses.
@@ -51,7 +50,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-white/60 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} NexusAI. All rights reserved.
+            &copy; {new Date().getFullYear()} Analytics One. All rights reserved.
           </div>
           
           <div className="flex space-x-6">

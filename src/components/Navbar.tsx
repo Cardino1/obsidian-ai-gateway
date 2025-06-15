@@ -1,16 +1,6 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Code, Menu, X } from "lucide-react";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -25,32 +15,7 @@ const Navbar = () => {
           </div>
           
           <nav className="hidden md:flex space-x-10">
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-sm text-white/80 hover:text-white transition-colors bg-transparent">
-                    Solutions
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className="bg-black border-white/10">
-                    <div className="p-4 w-48">
-                      <div className="space-y-2">
-                        <div className="text-sm text-white/60 px-3 py-2 cursor-default">
-                          Finance
-                        </div>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            to="/biotech"
-                            className="block text-sm text-white/80 hover:text-white px-3 py-2 rounded hover:bg-white/10 transition-colors"
-                          >
-                            BioTech
-                          </Link>
-                        </NavigationMenuLink>
-                      </div>
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+            <a href="#solutions" className="text-sm text-white/80 hover:text-white transition-colors">Solutions</a>
             <a href="#approach" className="text-sm text-white/80 hover:text-white transition-colors">Approach</a>
             <a href="#case-studies" className="text-sm text-white/80 hover:text-white transition-colors">Case Studies</a>
             <a href="#contact" className="text-sm text-white/80 hover:text-white transition-colors">Contact</a>
@@ -85,11 +50,7 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-black border-t border-white/10">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <div className="py-2 px-3 text-white/80">Solutions</div>
-            <div className="pl-6 space-y-1">
-              <div className="py-2 px-3 text-white/60">Finance</div>
-              <Link to="/biotech" className="block py-2 px-3 text-white/80 hover:text-white">BioTech</Link>
-            </div>
+            <a href="#solutions" className="block py-2 px-3 text-white/80 hover:text-white">Solutions</a>
             <a href="#approach" className="block py-2 px-3 text-white/80 hover:text-white">Approach</a>
             <a href="#case-studies" className="block py-2 px-3 text-white/80 hover:text-white">Case Studies</a>
             <a href="#contact" className="block py-2 px-3 text-white/80 hover:text-white">Contact</a>

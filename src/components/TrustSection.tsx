@@ -1,18 +1,66 @@
 
 const TrustSection = () => {
   const logos = [
-    { name: "Harvard University", width: "w-32" },
-    { name: "Stanford", width: "w-28" },
-    { name: "MIT", width: "w-24" },
-    { name: "Google", width: "w-28" },
-    { name: "Microsoft", width: "w-32" },
-    { name: "Apple", width: "w-24" },
-    { name: "Tesla", width: "w-28" },
-    { name: "Amazon", width: "w-32" },
-    { name: "IBM", width: "w-20" },
-    { name: "Oracle", width: "w-28" },
-    { name: "Salesforce", width: "w-32" },
-    { name: "Meta", width: "w-24" }
+    { 
+      name: "Harvard University", 
+      width: "w-32",
+      src: "https://logos-world.net/wp-content/uploads/2020/12/Harvard-Logo.png"
+    },
+    { 
+      name: "Stanford", 
+      width: "w-28",
+      src: "https://logos-world.net/wp-content/uploads/2020/06/Stanford-Logo.png"
+    },
+    { 
+      name: "MIT", 
+      width: "w-24",
+      src: "https://logos-world.net/wp-content/uploads/2020/06/MIT-Logo.png"
+    },
+    { 
+      name: "Google", 
+      width: "w-28",
+      src: "https://logos-world.net/wp-content/uploads/2020/09/Google-Logo.png"
+    },
+    { 
+      name: "Microsoft", 
+      width: "w-32",
+      src: "https://logos-world.net/wp-content/uploads/2020/09/Microsoft-Logo.png"
+    },
+    { 
+      name: "Apple", 
+      width: "w-24",
+      src: "https://logos-world.net/wp-content/uploads/2020/04/Apple-Logo.png"
+    },
+    { 
+      name: "Tesla", 
+      width: "w-28",
+      src: "https://logos-world.net/wp-content/uploads/2020/09/Tesla-Logo.png"
+    },
+    { 
+      name: "Amazon", 
+      width: "w-32",
+      src: "https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"
+    },
+    { 
+      name: "IBM", 
+      width: "w-20",
+      src: "https://logos-world.net/wp-content/uploads/2020/09/IBM-Logo.png"
+    },
+    { 
+      name: "Oracle", 
+      width: "w-28",
+      src: "https://logos-world.net/wp-content/uploads/2020/09/Oracle-Logo.png"
+    },
+    { 
+      name: "Salesforce", 
+      width: "w-32",
+      src: "https://logos-world.net/wp-content/uploads/2021/08/Salesforce-Logo.png"
+    },
+    { 
+      name: "Meta", 
+      width: "w-24",
+      src: "https://logos-world.net/wp-content/uploads/2021/10/Meta-Logo.png"
+    }
   ];
 
   return (
@@ -33,22 +81,26 @@ const TrustSection = () => {
             {logos.map((logo, index) => (
               <div
                 key={`first-${index}`}
-                className={`flex-shrink-0 mx-8 ${logo.width} h-16 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm`}
+                className={`flex-shrink-0 mx-8 ${logo.width} h-16 bg-white/5 rounded-lg flex items-center justify-center backdrop-blur-sm p-4`}
               >
-                <span className="text-white/60 font-semibold text-sm whitespace-nowrap">
-                  {logo.name}
-                </span>
+                <img
+                  src={logo.src}
+                  alt={logo.name}
+                  className="max-w-full max-h-full object-contain filter grayscale opacity-70 hover:opacity-100 transition-opacity duration-300"
+                />
               </div>
             ))}
             {/* Duplicate set for seamless loop */}
             {logos.map((logo, index) => (
               <div
                 key={`second-${index}`}
-                className={`flex-shrink-0 mx-8 ${logo.width} h-16 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm`}
+                className={`flex-shrink-0 mx-8 ${logo.width} h-16 bg-white/5 rounded-lg flex items-center justify-center backdrop-blur-sm p-4`}
               >
-                <span className="text-white/60 font-semibold text-sm whitespace-nowrap">
-                  {logo.name}
-                </span>
+                <img
+                  src={logo.src}
+                  alt={logo.name}
+                  className="max-w-full max-h-full object-contain filter grayscale opacity-70 hover:opacity-100 transition-opacity duration-300"
+                />
               </div>
             ))}
           </div>

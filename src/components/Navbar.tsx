@@ -1,6 +1,14 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Code, Menu, X } from "lucide-react";
+import { Code, Menu, X, ChevronDown } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,7 +23,20 @@ const Navbar = () => {
           </div>
           
           <nav className="hidden md:flex space-x-10">
-            <a href="#solutions" className="text-sm text-white/80 hover:text-white transition-colors">Solutions</a>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center text-sm text-white/80 hover:text-white transition-colors">
+                Solutions
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-black/90 border-white/10 backdrop-blur-sm">
+                <DropdownMenuItem className="text-white/80 hover:text-white focus:text-white">
+                  Finance
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="text-white/80 hover:text-white focus:text-white">
+                  <Link to="/neuramedica">NeuraMedica</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <a href="#approach" className="text-sm text-white/80 hover:text-white transition-colors">Approach</a>
             <a href="#case-studies" className="text-sm text-white/80 hover:text-white transition-colors">Case Studies</a>
             <a href="#contact" className="text-sm text-white/80 hover:text-white transition-colors">Contact</a>
@@ -50,7 +71,15 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-black border-t border-white/10">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#solutions" className="block py-2 px-3 text-white/80 hover:text-white">Solutions</a>
+            <div className="py-2 px-3">
+              <span className="text-white/80 font-medium">Solutions</span>
+              <div className="ml-4 mt-2 space-y-1">
+                <div className="block py-1 px-3 text-white/60">Finance</div>
+                <Link to="/neuramedica" className="block py-1 px-3 text-white/60 hover:text-white">
+                  NeuraMedica
+                </Link>
+              </div>
+            </div>
             <a href="#approach" className="block py-2 px-3 text-white/80 hover:text-white">Approach</a>
             <a href="#case-studies" className="block py-2 px-3 text-white/80 hover:text-white">Case Studies</a>
             <a href="#contact" className="block py-2 px-3 text-white/80 hover:text-white">Contact</a>

@@ -43,7 +43,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-white mb-1">Email Us</h3>
-                    <p className="text-white/70">contact@nexusai.example</p>
+                    <p className="text-white/70">contact@analyticsone.site</p>
                   </div>
                 </div>
                 
@@ -68,7 +68,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-white mb-1">Visit Us</h3>
-                    <p className="text-white/70">123 AI Boulevard, San Francisco, CA 94105</p>
+                    <p className="text-white/70">12 Rue Clément, 75006 Paris, France</p>
+                    <p className="text-white/70">360 E 2nd St, DTLA, CA 90012, USA</p>
                   </div>
                 </div>
               </div>

@@ -43,20 +43,6 @@ const Hero = () => {
             </Button>
           </div>
           
-          <div className="mt-12 flex items-center justify-center">
-            <p className="text-sm text-white/50">Trusted by industry leaders:</p>
-            <div className="mt-4 flex flex-wrap justify-center gap-8">
-              <div className="h-8 w-32 bg-white/10 rounded-md flex items-center justify-center">
-                <span className="text-white/60 text-sm font-semibold">ACME Corp</span>
-              </div>
-              <div className="h-8 w-32 bg-white/10 rounded-md flex items-center justify-center">
-                <span className="text-white/60 text-sm font-semibold">TechGiant</span>
-              </div>
-              <div className="h-8 w-32 bg-white/10 rounded-md flex items-center justify-center">
-                <span className="text-white/60 text-sm font-semibold">DataFirm</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

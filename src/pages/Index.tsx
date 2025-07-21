@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustSection from "@/components/TrustSection";
 import Solutions from "@/components/Solutions";
-import Approach from "@/components/Approach";
+import Services from "@/components/Services";
 import CaseStudies from "@/components/CaseStudies";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
@@ -17,7 +17,7 @@ const Index = () => {
         <Hero />
         <TrustSection />
         <Solutions />
-        <Approach />
+        <Services />
         <CaseStudies />
         <Testimonials />
         <Contact />

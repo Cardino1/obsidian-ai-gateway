@@ -37,7 +37,7 @@ const Navbar = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="#approach" className="text-sm text-white/80 hover:text-white transition-colors">Approach</a>
+            <a href="#services" className="text-sm text-white/80 hover:text-white transition-colors">Services</a>
             <a href="#case-studies" className="text-sm text-white/80 hover:text-white transition-colors">Case Studies</a>
             <a href="#contact" className="text-sm text-white/80 hover:text-white transition-colors">Contact</a>
           </nav>
@@ -80,7 +80,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <a href="#approach" className="block py-2 px-3 text-white/80 hover:text-white">Approach</a>
+            <a href="#services" className="block py-2 px-3 text-white/80 hover:text-white">Services</a>
             <a href="#case-studies" className="block py-2 px-3 text-white/80 hover:text-white">Case Studies</a>
             <a href="#contact" className="block py-2 px-3 text-white/80 hover:text-white">Contact</a>
             <div className="flex flex-col space-y-2 pt-2">
